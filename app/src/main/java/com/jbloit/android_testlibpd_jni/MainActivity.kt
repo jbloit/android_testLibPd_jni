@@ -12,6 +12,9 @@ class MainActivity : AppCompatActivity() {
 
         // Example of a call to a native method
         sample_text.text = stringFromJNI()
+
+        var prop : Int = test()
+        print("prop " + prop)
     }
 
     /**
@@ -19,6 +22,7 @@ class MainActivity : AppCompatActivity() {
      * which is packaged with this application.
      */
     external fun stringFromJNI(): String
+    external fun test(): Int
 
     companion object {
 
