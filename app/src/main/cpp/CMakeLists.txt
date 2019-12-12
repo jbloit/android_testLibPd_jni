@@ -19,6 +19,7 @@ add_library( # Sets the name of the library.
              # Provides a relative path to your source file(s).
              native-lib.cpp
              Test.cpp
+             PdObject.cpp
         )
 
 # Searches for a specified prebuilt library and stores the path as a
@@ -50,6 +51,9 @@ set_target_properties(
 
 include_directories( /Users/bloit/LIBS/libpd/pure-data/src/ )
 include_directories( libpd/libpd_wrapper )
+include_directories( libpd/libpd_wrapper/util )
+include_directories( libpd/cpp )
+include_directories( libpd/pd )
 
 
 # Specifies libraries CMake should link to your target library. You
